@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Processo seletivo interfaces web CAEd</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- ----------------------MENU---------------------- -->
+
+<header id="cabecalho">
+  <div class="row">
+    <div class="col-7">
+    <h3>Logotipo</h3>
+  </div>
+  <div class="col-5">
+    <nav>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#introducao"> INTRODUÇÃO </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#secao1"> SEÇÃO 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#secao2">SEÇÃO 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#secao3">SEÇÃO 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">CONTATO</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</header>
+
+<!-- ----------------------INTRODUÇÃO---------------------- -->
+
+<section id="introducao">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+         <h1 class="titulo"> <b>Construindo uma educação de qualidade</b></h1>
+
+         <p id="text_introducao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Possimus, alias corrupti. Qui et consequuntur enim provident
+            harum amet, doloremque ea. Laborum aut, architecto magnam
+            fugiat obcaecati recusandae quod debitis quo? Sunt debitis
+            saplente deleniti ratione itaque quaerat cumque soluta
+            accusantium, voluptate aut consequatur adipisci iusto illo
+            facilis laboriosam eligendi blanditiis repudiandae provident
+            aliquam consectetur harum optio dolores. Nam, placeat alias?
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo" id="botao-modal">
+            Abrir modal
+          </button>
+          <script type="text/javascript">
+
+            var count = 1;
+
+            document.getElementById("botao-modal").onclick = function() {mudaCor()};
+
+            function mudaCor(){
+              var propriedade = document.getElementById("botao-modal");
+              if(count == 0){
+                propriedade.style.backgroundColor = "#1975fd";
+                propriedade.style.borderColor = "none";
+                count = 1;
+              }else{
+                propriedade.style.backgroundColor = "#97A43C";
+                propriedade.style.borderColor = "#48753A";
+                count = 0;
+              }
+            }
+
+          </script>
+          <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="title" id="exampleModalLabel"><b>Construindo uma educação de qualidade</b></h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <img src="img/intro.svg">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptate sequi reprehenderit ipsum amet quae commodi ex
+                  architecto assumenda, nemo sapiente error quod iusto dicta
+                  dolor sint tempore id deserunt quo.
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-7">
+        <img src="img/intro.svg" id="img_introducao">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------SEÇÃO 1---------------------- -->
+
+<section id="secao1">
+  <h1> <b>Seção 1</b></h1>
+  <div class="row">
+    <div class="col-3">
+      <img src="img/cadernos.svg" width="110" height="110" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+      <h2 class="subtitle"><b>Educação</b></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet malesuada turpis eu efficitur. Ut vulputate nisl enim, quis dictum nibh iaculis nec.</p>
+    </div>
+    <div class="col-3">
+      <img src="img/lapis.svg" width="110" height="110" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."> 
+      <h2 class="subtitle"><b>Execução</b></h2> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet malesuada turpis eu efficitur. Ut vulputate nisl enim, quis dictum nibh iaculis nec.</p>   
+    </div>
+    <div class="col-3">
+      <img src="img/mochila.svg" width="110" height="110" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+      <h2 class="subtitle"><b>Capacitação</b></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet malesuada turpis eu efficitur. Ut vulputate nisl enim, quis dictum nibh iaculis nec.</p>
+    </div>
+    <div class="col-3">
+      <img src="img/laptop.svg" width="110" height="110" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+      <h2 class="subtitle"><b>Formação</b></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet malesuada turpis eu efficitur. Ut vulputate nisl enim, quis dictum nibh iaculis nec.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------SEÇÃO 2---------------------- -->
+
+<section id="secao2">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <h1 class="titulo"><b>Seção 2</b></h1>
+    <div class="row">
+    <div class="col-3">
+      <a class="carousel-control-prev col-6" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="col-6">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <p class="d-block w-100" alt="PrimeiroSlide">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc urna, tristique sed orci a, aliquam egestas velit. Aliquam efficitur ante vel dolor suscipit, a maximus sapien pulvinar. 
+            </p>
+        </div>
+        <div class="carousel-item">
+          <p class="d-block w-100" alt="SegundoSlide"> 
+            Sed lacinia tortor magna, consectetur suscipit diam aliquam malesuada. Vivamus mi magna, elementum id odio ac, tincidunt dapibus lorem. 
+          </p>
+        </div>
+        <div class="carousel-item">
+          <p class="d-block w-100" alt="TerceiroSlide">
+           In tristique elementum, metus neque lobortis tellus, vel hendrerit mauris urna a erat. Integer ac nulla id sem vestibulum sodales vitae sed mi.  
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ----------------------SEÇÃO 3---------------------- -->
+
+<section id="secao3">
+  <div class="container" class="accordion" id="accordionExample">
+    <h1><b>Seção 3</b></h1>
+      <div class="panel panel-default" id="panel1" class="card-header" id="headingOne">
+        <div class="panel-heading">
+          <h5 class="panel-title" class="mb-0" ><b>
+          <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Língua Portuguesa, Matemática, Ciências Geografia</a></b>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" class="card-body">
+          <div class="panel-body" class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu egestas sem, sed suscipit leo. Aliquam porta congue lacus, quis sodales tortor fringilla iaculis. Donec dapibus vel quam vulputate porttitor. Praesent lorem urna, commodo sit amet massa sit amet, tincidunt commodo leo. Praesent non massa turpis. Vivamus commodo metus ut nibh scelerisque, eu fringilla lectus semper. Nam in turpis vel odio pulvinar ornare ut ut arcu.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="panel panel-default" id="panel2" class="card-header" id="headingTwo">
+      <div class="panel-heading">
+        <h5 class="panel-title" class="mb-0"><b>
+        <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed" aria-expanded="false" aria-controls="collapseTwo">Língua Portuguesa e Matemática</a>
+        </b>
+        </h5>
+        <div id="collapseTwo" class="panel-collapse collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="panel-body" class="card-body">
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut auctor sit amet quam non egestas. Sed volutpat, nunc et dictum luctus, libero purus pharetra orci, vel tincidunt urna tortor mattis ligula. Donec id mi id dui interdum condimentum sed at nibh. Suspendisse nec suscipit nisl, quis pharetra magna. Suspendisse potenti. Pellentesque dictum eros vel augue sagittis, vel porttitor nisl consequat. In elementum varius urna, a hendrerit libero. Suspendisse sed dolor congue, auctor libero ac, elementum libero. Duis lobortis facilisis posuere. Aliquam nec eros molestie, fringilla odio nec, ultrices elit. Nullam pretium vestibulum orci vitae posuere. Nullam vel bibendum elit, in vulputate ligula.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default" id="panel3" class="card-header" id="headingThree">
+      <div class="panel-heading">
+               <h5 class="panel-title" class="mb-0"><b>
+          <a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed" aria-expanded="false" aria-controls="collapseThree">
+          Língua Portuguesa, Matemática e Ciências
+          </a>
+        </b>
+        </h5>
+
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" >
+          <div class="panel-body" class="card-body">
+            <p>Ut fringilla nec ex a accumsan. Praesent consequat tempor dui sit amet tempus. Praesent at sapien commodo velit eleifend accumsan. Nulla malesuada nunc quis enim pellentesque consectetur. Duis bibendum elit in tincidunt malesuada. Maecenas eget orci nunc. Duis ac lobortis mauris. Morbi facilisis nibh aliquet tincidunt ultrices.</p>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ----------------------CONTATO---------------------- -->
+
+  <footer id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-6" id="suporte">
+          <h1>
+            <b>Suporte Técnico</b>
+          </h1>
+          <ul>
+            <li>De segunda à sexta-feira de 7:30 às 19:30</li>
+            <li>suportecursos@caed.ufjf.br</li>
+            <li>0800 7273 142</li>
+          </ul>
+        </div>
+        <div class="col-6" id="caed">
+          <img src="img/logo-caed.svg">
+            <br></br>
+            <p>COPYRIGHT*2019 CAED UFJF ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
